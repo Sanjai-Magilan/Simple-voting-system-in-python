@@ -54,4 +54,3 @@ elif (s == f and a == 1 and a == 2 and a == 3):
 elif (f == d and a == 1 and a == 2 and a == 3):
 
     print("ippo and jojo are tie")
-
