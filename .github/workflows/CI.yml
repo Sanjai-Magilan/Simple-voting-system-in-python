@@ -1,0 +1,26 @@
+name: py ci
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+
+jobs:
+    build-andtest: 
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: checkout code
+              uses: actions/checkout@v4
+
+            - name: install python
+              uses: actions/setup-python@v3
+              with:
+                python-version: '3.x'
+
+            - name: install flake8
+              run: pip install flake8
+
+            - name: run flake8
+              run: flake8 .
+
