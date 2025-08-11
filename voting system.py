@@ -5,7 +5,7 @@ h = []
 i = []
 e = []
 z = int(input("enter 1 for vote and 0 to exit : "))
-while ( z == 1 ):
+while (z == 1):
     a = int(input("Enter your choice : "))
     if (a == 1):
         h.append(1)
@@ -14,12 +14,12 @@ while ( z == 1 ):
     elif (a == 3): 
         e.append(1)
     else:
-            print("Invalid option")
+        print("Invalid option")
 
 s = (len(h))
 d = (len(i))
 f = (len(e))
-z = int(input("1 for countio 0 for exit : ")) # here is the probleme
+z = int(input("1 for continue 0 for exit : "))
 if (s > d and s > f):
     print("zero two won")
 elif (d > f and d > s):
@@ -34,3 +34,4 @@ elif (s == f and a == 1 and a == 2 and a == 3):
     print("zero two and jojo are tie")
 elif (f == d and a == 1 and a == 2 and a == 3):
     print("ippo and jojo are tie")
+
