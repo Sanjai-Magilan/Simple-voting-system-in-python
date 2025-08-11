@@ -26,7 +26,7 @@ while(z==1):
 s = (len(h))
 d = (len(i))
 f = (len(e))
-  z = int(input("1 for countio 0 for exit : ")) # here is the probleme
+z = int(input("1 for countio 0 for exit : ")) # here is the probleme
 if (s > d and s > f):
 
     print("zero two won")
@@ -54,4 +54,5 @@ elif (s == f and a == 1 and a == 2 and a == 3):
 elif (f == d and a == 1 and a == 2 and a == 3):
 
     print("ippo and jojo are tie")
+
 
